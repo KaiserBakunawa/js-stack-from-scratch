@@ -18,5 +18,8 @@
     "linebreak-style": ["error", "windows"],
     "eol-last": "off",
     "space-before-function-paren": "off"
+  },
+  "settings": {
+    "polyfills": ["fetch"]
   }
 }

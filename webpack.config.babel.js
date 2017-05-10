@@ -18,7 +18,7 @@ export default {
   },
   module: {
     rules: [
-      {test: /\.(js|jsx)$/, use: 'babel-loader', exclude: /node_modules/},
+      { test: /\.(js|jsx)$/, use: 'babel-loader', exclude: /node_modules/ },
     ],
   },
   devtool: isProd ? false : 'source-map',
@@ -27,12 +27,12 @@ export default {
   },
   devServer: {
     port: WDS_PORT,
-    hot: true
+    hot: true,
   },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
-  ]
+    new webpack.NoEmitOnErrorsPlugin(),
+  ],
 }
