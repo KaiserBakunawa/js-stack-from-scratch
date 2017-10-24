@@ -1,3 +1,3 @@
 
-const str = `ES6`
+const str = `Hacktober Fest!`
 console.log(`Hello ${str}`)
